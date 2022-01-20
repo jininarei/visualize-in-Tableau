@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook original-version='18.1' source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Rotten Tomatoes top 200 of 2010s' inline='true' name='federated.1iocky30hdxzwm13ecv4u0zb79gg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Rotten Tomatoes top 200 of 2010s' name='textscan.1yskran1miayc114pl4kt1a7c2tk'>
+            <connection class='textscan' directory='C:/Users/Jinina Rei Garcia/OneDrive/Documents/HULT/STUDIES/Data Visualization/Homework 1_Garcia, Jinina.twb Files/Data/Instructor workbooks' filename='Rotten Tomatoes top 200 of 2010s.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1yskran1miayc114pl4kt1a7c2tk' name='Rotten Tomatoes top 200 of 2010s.csv' table='[Rotten Tomatoes top 200 of 2010s#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='Title' ordinal='0' />
+            <column datatype='string' name='Genre' ordinal='1' />
+            <column datatype='date' name='In Theaters' ordinal='2' />
+            <column datatype='real' name='Critics Score' ordinal='3' />
+            <column datatype='integer' name='Number of Critic Ratings' ordinal='4' />
+            <column datatype='real' name='Audience Score' ordinal='5' />
+            <column datatype='real' name='Number of User Ratings' ordinal='6' />
+            <column datatype='real' name='Budget' ordinal='7' />
+            <column datatype='real' name='Box Office US &amp; Canada' ordinal='8' />
+            <column datatype='real' name='Box Office Worldwide' ordinal='9' />
+            <column datatype='integer' name='Runtime Minutes' ordinal='10' />
+            <column datatype='string' name='Synopsis' ordinal='11' />
+            <column datatype='string' name='Critics Consensus' ordinal='12' />
+            <column datatype='string' name='Studio' ordinal='13' />
+            <column datatype='string' name='Content Rating' ordinal='14' />
+            <column datatype='string' name='URL' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1yskran1miayc114pl4kt1a7c2tk' name='Rotten Tomatoes top 200 of 2010s.csv' table='[Rotten Tomatoes top 200 of 2010s#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='Title' ordinal='0' />
+            <column datatype='string' name='Genre' ordinal='1' />
+            <column datatype='date' name='In Theaters' ordinal='2' />
+            <column datatype='real' name='Critics Score' ordinal='3' />
+            <column datatype='integer' name='Number of Critic Ratings' ordinal='4' />
+            <column datatype='real' name='Audience Score' ordinal='5' />
+            <column datatype='real' name='Number of User Ratings' ordinal='6' />
+            <column datatype='real' name='Budget' ordinal='7' />
+            <column datatype='real' name='Box Office US &amp; Canada' ordinal='8' />
+            <column datatype='real' name='Box Office Worldwide' ordinal='9' />
+            <column datatype='integer' name='Runtime Minutes' ordinal='10' />
+            <column datatype='string' name='Synopsis' ordinal='11' />
+            <column datatype='string' name='Critics Consensus' ordinal='12' />
+            <column datatype='string' name='Studio' ordinal='13' />
+            <column datatype='string' name='Content Rating' ordinal='14' />
+            <column datatype='string' name='URL' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_AU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In Theaters</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[In Theaters]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>In Theaters</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Critics Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Critics Score]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Critics Score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Critic Ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Critic Ratings]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Number of Critic Ratings</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Audience Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Audience Score]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Audience Score</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of User Ratings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number of User Ratings]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Number of User Ratings</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Budget</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Budget]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Budget</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Box Office US &amp; Canada</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Box Office US &amp; Canada]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Box Office US &amp; Canada</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Box Office Worldwide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Box Office Worldwide]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Box Office Worldwide</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Runtime Minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Runtime Minutes]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Runtime Minutes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Synopsis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Synopsis]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Synopsis</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Critics Consensus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Critics Consensus]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Critics Consensus</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Studio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Studio]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Studio</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Content Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Content Rating]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>Content Rating</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[URL]</local-name>
+            <parent-name>[Rotten Tomatoes top 200 of 2010s.csv]</parent-name>
+            <remote-alias>URL</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Audience Score (bin) 2' datatype='integer' name='[Audience Score (bin) 2]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Audience Score]' peg='0' size='0.05' />
+      </column>
+      <column aggregation='None' caption='Audience Score (bin)' datatype='integer' name='[Audience Score (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Audience Score]' peg='0' size='0.05' />
+      </column>
+      <column datatype='real' name='[Audience Score]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Box Office US &amp; Canada]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Box Office Worldwide]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Budget]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Critics Score]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Critic Ratings]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[Number of User Ratings]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Runtime Minutes]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Migrated Data]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Migrated Data:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Audience Score]' derivation='Sum' name='[sum:Audience Score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Box Office US &amp; Canada]' derivation='Sum' name='[sum:Box Office US &amp; Canada:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Box Office Worldwide]' derivation='Sum' name='[sum:Box Office Worldwide:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Budget]' derivation='Sum' name='[sum:Budget:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Critics Score]' derivation='Sum' name='[sum:Critics Score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Critic Ratings]' derivation='Sum' name='[sum:Number of Critic Ratings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of User Ratings]' derivation='Sum' name='[sum:Number of User Ratings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Runtime Minutes]' derivation='Sum' name='[sum:Runtime Minutes:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office US &amp; Canada:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Audience Score:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Critics Score:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Number of User Ratings:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Runtime Minutes:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Budget:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[__tableau_internal_object_id__].[cnt:Migrated Data:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Number of Critic Ratings:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation connection='textscan.1yskran1miayc114pl4kt1a7c2tk' name='Rotten Tomatoes top 200 of 2010s.csv' table='[Rotten Tomatoes top 200 of 2010s#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+                  <column datatype='string' name='Title' ordinal='0' />
+                  <column datatype='string' name='Genre' ordinal='1' />
+                  <column datatype='date' name='In Theaters' ordinal='2' />
+                  <column datatype='real' name='Critics Score' ordinal='3' />
+                  <column datatype='integer' name='Number of Critic Ratings' ordinal='4' />
+                  <column datatype='real' name='Audience Score' ordinal='5' />
+                  <column datatype='real' name='Number of User Ratings' ordinal='6' />
+                  <column datatype='real' name='Budget' ordinal='7' />
+                  <column datatype='real' name='Box Office US &amp; Canada' ordinal='8' />
+                  <column datatype='real' name='Box Office Worldwide' ordinal='9' />
+                  <column datatype='integer' name='Runtime Minutes' ordinal='10' />
+                  <column datatype='string' name='Synopsis' ordinal='11' />
+                  <column datatype='string' name='Critics Consensus' ordinal='12' />
+                  <column datatype='string' name='Studio' ordinal='13' />
+                  <column datatype='string' name='Content Rating' ordinal='14' />
+                  <column datatype='string' name='URL' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Homework1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Revenge of the Trees</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Rotten Tomatoes top 200 of 2010s' name='federated.1iocky30hdxzwm13ecv4u0zb79gg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1iocky30hdxzwm13ecv4u0zb79gg'>
+            <column datatype='real' name='[Box Office Worldwide]' role='measure' type='quantitative' />
+            <column datatype='date' name='[In Theaters]' role='dimension' type='ordinal' />
+            <column-instance column='[Box Office Worldwide]' derivation='Sum' name='[sum:Box Office Worldwide:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[In Theaters]' derivation='Year' name='[yr:In Theaters:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' scope='rows' value='false' />
+            <format attr='auto-subtitle' class='0' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[yr:In Theaters:ok]' value='106' />
+            <format attr='text-format' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' value='c&quot;$&quot;#,##0,,,.00B;-&quot;$&quot;#,##0,,,.00B' />
+            <format attr='text-align' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' value='center' />
+            <format attr='vertical-align' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' value='center' />
+            <format attr='wrap' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.93353593349456787' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.55972373485565186' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#9d7660' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk] + [federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk])</rows>
+        <cols>[federated.1iocky30hdxzwm13ecv4u0zb79gg].[yr:In Theaters:ok]</cols>
+      </table>
+      <simple-id uuid='{881A9C6B-D9CD-44E4-9DEC-1152A08A3D8A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Homework1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1iocky30hdxzwm13ecv4u0zb79gg].[:Measure Names]</field>
+            <field>[federated.1iocky30hdxzwm13ecv4u0zb79gg].[sum:Box Office Worldwide:qk]</field>
+            <field>[federated.1iocky30hdxzwm13ecv4u0zb79gg].[yr:In Theaters:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{78322835-3233-465C-8E18-F6D6015E5A77}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Homework1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
